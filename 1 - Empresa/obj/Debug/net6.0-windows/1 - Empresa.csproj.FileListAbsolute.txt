@@ -1,0 +1,8 @@
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.csproj.AssemblyReference.cache
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\_1___Empresa.Telas.Cadastro.resources
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\_1___Empresa.Telas.TelaMenu.resources
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.csproj.GenerateResource.cache
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.AssemblyInfoInputs.cache
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.AssemblyInfo.cs
+C:\Users\2022102020084\Downloads\DS 2024\1 Bimestre\1 - Empresa\1 - Empresa\obj\Debug\net6.0-windows\1 - Empresa.csproj.CoreCompileInputs.cache

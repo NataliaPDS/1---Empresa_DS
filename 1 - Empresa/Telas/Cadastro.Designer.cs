@@ -51,7 +51,6 @@
             radioButton2 = new RadioButton();
             radioButton3 = new RadioButton();
             dateTimePicker1 = new DateTimePicker();
-            tb_Telefone = new TextBox();
             tb_CapitalSocial = new TextBox();
             cb_Endereco = new ComboBox();
             radioButton4 = new RadioButton();
@@ -62,6 +61,7 @@
             cb_NaturezaJuridica = new ComboBox();
             tb_NomeProprietario = new TextBox();
             tb_CpfProprietario = new TextBox();
+            maskedTextBox1 = new MaskedTextBox();
             SuspendLayout();
             // 
             // label1
@@ -197,6 +197,7 @@
             // cb_SituacaoCadastral
             // 
             cb_SituacaoCadastral.FormattingEnabled = true;
+            cb_SituacaoCadastral.Items.AddRange(new object[] { "Ativa", "Nula", "Suspensa", "Inapta", "Baixado" });
             cb_SituacaoCadastral.Location = new Point(114, 148);
             cb_SituacaoCadastral.Name = "cb_SituacaoCadastral";
             cb_SituacaoCadastral.Size = new Size(121, 23);
@@ -236,10 +237,10 @@
             radioButton1.AutoSize = true;
             radioButton1.Location = new Point(107, 190);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
+            radioButton1.Size = new Size(116, 19);
             radioButton1.TabIndex = 21;
             radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
+            radioButton1.Text = "Simples Nacional";
             radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -247,10 +248,10 @@
             radioButton2.AutoSize = true;
             radioButton2.Location = new Point(107, 214);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
+            radioButton2.Size = new Size(115, 19);
             radioButton2.TabIndex = 22;
             radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
+            radioButton2.Text = "Lucro Presumido";
             radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -258,10 +259,10 @@
             radioButton3.AutoSize = true;
             radioButton3.Location = new Point(107, 239);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
+            radioButton3.Size = new Size(47, 19);
             radioButton3.TabIndex = 23;
             radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
+            radioButton3.Text = "Real";
             radioButton3.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
@@ -270,13 +271,6 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 24;
-            // 
-            // tb_Telefone
-            // 
-            tb_Telefone.Location = new Point(114, 313);
-            tb_Telefone.Name = "tb_Telefone";
-            tb_Telefone.Size = new Size(100, 23);
-            tb_Telefone.TabIndex = 25;
             // 
             // tb_CapitalSocial
             // 
@@ -288,6 +282,7 @@
             // cb_Endereco
             // 
             cb_Endereco.FormattingEnabled = true;
+            cb_Endereco.Items.AddRange(new object[] { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins" });
             cb_Endereco.Location = new Point(114, 402);
             cb_Endereco.Name = "cb_Endereco";
             cb_Endereco.Size = new Size(121, 23);
@@ -370,11 +365,20 @@
             tb_CpfProprietario.Size = new Size(100, 23);
             tb_CpfProprietario.TabIndex = 36;
             // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(114, 313);
+            maskedTextBox1.Mask = "(00) 00000-0000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(100, 23);
+            maskedTextBox1.TabIndex = 37;
+            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(maskedTextBox1);
             Controls.Add(tb_CpfProprietario);
             Controls.Add(tb_NomeProprietario);
             Controls.Add(cb_NaturezaJuridica);
@@ -385,7 +389,6 @@
             Controls.Add(radioButton4);
             Controls.Add(cb_Endereco);
             Controls.Add(tb_CapitalSocial);
-            Controls.Add(tb_Telefone);
             Controls.Add(dateTimePicker1);
             Controls.Add(radioButton3);
             Controls.Add(radioButton2);
@@ -441,7 +444,6 @@
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private DateTimePicker dateTimePicker1;
-        private TextBox tb_Telefone;
         private TextBox tb_CapitalSocial;
         private ComboBox cb_Endereco;
         private RadioButton radioButton4;
@@ -452,5 +454,6 @@
         private ComboBox cb_NaturezaJuridica;
         private TextBox tb_NomeProprietario;
         private TextBox tb_CpfProprietario;
+        private MaskedTextBox maskedTextBox1;
     }
 }
