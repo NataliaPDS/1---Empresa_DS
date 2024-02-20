@@ -62,6 +62,15 @@
             tb_NomeProprietario = new TextBox();
             tb_CpfProprietario = new TextBox();
             maskedTextBox1 = new MaskedTextBox();
+            button1 = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
+            dataGridView1 = new DataGridView();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -168,7 +177,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(350, 177);
+            label12.Location = new Point(370, 212);
             label12.Name = "label12";
             label12.Size = new Size(100, 15);
             label12.TabIndex = 11;
@@ -178,7 +187,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(350, 218);
+            label13.Location = new Point(348, 249);
             label13.Name = "label13";
             label13.Size = new Size(125, 15);
             label13.TabIndex = 12;
@@ -187,7 +196,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(362, 263);
+            label14.Location = new Point(397, 319);
             label14.Name = "label14";
             label14.Size = new Size(113, 15);
             label14.TabIndex = 13;
@@ -213,7 +222,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(382, 218);
+            label15.Location = new Point(417, 274);
             label15.Name = "label15";
             label15.Size = new Size(0, 15);
             label15.TabIndex = 18;
@@ -235,7 +244,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(107, 190);
+            radioButton1.Location = new Point(7, 22);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(116, 19);
             radioButton1.TabIndex = 21;
@@ -246,7 +255,7 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(107, 214);
+            radioButton2.Location = new Point(7, 47);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(115, 19);
             radioButton2.TabIndex = 22;
@@ -257,7 +266,7 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(107, 239);
+            radioButton3.Location = new Point(7, 72);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(47, 19);
             radioButton3.TabIndex = 23;
@@ -267,7 +276,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(152, 275);
+            dateTimePicker1.Location = new Point(80, 274);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 24;
@@ -291,76 +300,78 @@
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(464, 33);
+            radioButton4.Location = new Point(6, 22);
             radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(94, 19);
+            radioButton4.Size = new Size(58, 19);
             radioButton4.TabIndex = 29;
             radioButton4.TabStop = true;
-            radioButton4.Text = "radioButton4";
+            radioButton4.Text = "Matriz";
             radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
             radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(464, 61);
+            radioButton5.Location = new Point(6, 47);
             radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(94, 19);
+            radioButton5.Size = new Size(49, 19);
             radioButton5.TabIndex = 30;
             radioButton5.TabStop = true;
-            radioButton5.Text = "radioButton5";
+            radioButton5.Text = "Filial";
             radioButton5.UseVisualStyleBackColor = true;
+            radioButton5.CheckedChanged += radioButton5_CheckedChanged;
             // 
             // radioButton6
             // 
             radioButton6.AutoSize = true;
-            radioButton6.Location = new Point(464, 103);
+            radioButton6.Location = new Point(6, 23);
             radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(94, 19);
+            radioButton6.Size = new Size(72, 19);
             radioButton6.TabIndex = 31;
             radioButton6.TabStop = true;
-            radioButton6.Text = "radioButton6";
+            radioButton6.Text = "Pequeno";
             radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton7
             // 
             radioButton7.AutoSize = true;
-            radioButton7.Location = new Point(464, 128);
+            radioButton7.Location = new Point(6, 48);
             radioButton7.Name = "radioButton7";
-            radioButton7.Size = new Size(94, 19);
+            radioButton7.RightToLeft = RightToLeft.No;
+            radioButton7.Size = new Size(59, 19);
             radioButton7.TabIndex = 32;
             radioButton7.TabStop = true;
-            radioButton7.Text = "radioButton7";
+            radioButton7.Text = "Medio";
             radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton8
             // 
             radioButton8.AutoSize = true;
-            radioButton8.Location = new Point(464, 153);
+            radioButton8.Location = new Point(6, 73);
             radioButton8.Name = "radioButton8";
-            radioButton8.Size = new Size(94, 19);
+            radioButton8.Size = new Size(63, 19);
             radioButton8.TabIndex = 33;
             radioButton8.TabStop = true;
-            radioButton8.Text = "radioButton8";
+            radioButton8.Text = "Grande";
             radioButton8.UseVisualStyleBackColor = true;
             // 
             // cb_NaturezaJuridica
             // 
             cb_NaturezaJuridica.FormattingEnabled = true;
-            cb_NaturezaJuridica.Location = new Point(464, 174);
+            cb_NaturezaJuridica.Location = new Point(495, 215);
             cb_NaturezaJuridica.Name = "cb_NaturezaJuridica";
             cb_NaturezaJuridica.Size = new Size(121, 23);
             cb_NaturezaJuridica.TabIndex = 34;
             // 
             // tb_NomeProprietario
             // 
-            tb_NomeProprietario.Location = new Point(481, 213);
+            tb_NomeProprietario.Location = new Point(516, 269);
             tb_NomeProprietario.Name = "tb_NomeProprietario";
             tb_NomeProprietario.Size = new Size(100, 23);
             tb_NomeProprietario.TabIndex = 35;
             // 
             // tb_CpfProprietario
             // 
-            tb_CpfProprietario.Location = new Point(481, 260);
+            tb_CpfProprietario.Location = new Point(516, 316);
             tb_CpfProprietario.Name = "tb_CpfProprietario";
             tb_CpfProprietario.Size = new Size(100, 23);
             tb_CpfProprietario.TabIndex = 36;
@@ -373,26 +384,78 @@
             maskedTextBox1.Size = new Size(100, 23);
             maskedTextBox1.TabIndex = 37;
             // 
+            // button1
+            // 
+            button1.Location = new Point(499, 374);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 38;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton3);
+            groupBox1.Location = new Point(114, 177);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(185, 100);
+            groupBox1.TabIndex = 39;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(radioButton4);
+            groupBox2.Controls.Add(radioButton5);
+            groupBox2.Location = new Point(464, 12);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(200, 85);
+            groupBox2.TabIndex = 40;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "groupBox2";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(radioButton6);
+            groupBox3.Controls.Add(radioButton7);
+            groupBox3.Controls.Add(radioButton8);
+            groupBox3.Location = new Point(464, 109);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(200, 100);
+            groupBox3.TabIndex = 41;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "groupBox3";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(5, 431);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(830, 117);
+            dataGridView1.TabIndex = 42;
+            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(825, 553);
+            Controls.Add(dataGridView1);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(button1);
             Controls.Add(maskedTextBox1);
             Controls.Add(tb_CpfProprietario);
             Controls.Add(tb_NomeProprietario);
             Controls.Add(cb_NaturezaJuridica);
-            Controls.Add(radioButton8);
-            Controls.Add(radioButton7);
-            Controls.Add(radioButton6);
-            Controls.Add(radioButton5);
-            Controls.Add(radioButton4);
             Controls.Add(cb_Endereco);
             Controls.Add(tb_CapitalSocial);
             Controls.Add(dateTimePicker1);
-            Controls.Add(radioButton3);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
             Controls.Add(tb_NomeFantasia);
             Controls.Add(tb_RazaoSocial);
             Controls.Add(label15);
@@ -415,6 +478,13 @@
             Name = "Cadastro";
             Text = "Cadastro";
             Load += Cadastro_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -455,5 +525,10 @@
         private TextBox tb_NomeProprietario;
         private TextBox tb_CpfProprietario;
         private MaskedTextBox maskedTextBox1;
+        private Button button1;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
+        private DataGridView dataGridView1;
     }
 }

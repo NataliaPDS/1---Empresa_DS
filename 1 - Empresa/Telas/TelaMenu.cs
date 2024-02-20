@@ -16,5 +16,11 @@ namespace _1___Empresa.Telas
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             Cadastro cadastro = new Cadastro();    
+            ShowDialog(cadastro);
+        }
     }
 }
