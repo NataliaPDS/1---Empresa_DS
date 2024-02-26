@@ -24,6 +24,7 @@ namespace _1___Empresa.Classes
         public string NomeProprietario { get; set; }
         public string CpfProprietario { get; set; }
 
+        public Empresa() { }
         public Empresa(string Cnpj, string RazaoSocial, string NomeFantasia, string SituacaoCadastral, string RegimeTributario, DateTime DataInicio, string Telefone, string CapitalSocial,
          string Endereco, string Tipo, string PorteEmpresa, string NaturezaJuridica, string NomeProprietario, string CpfProprietario)
         {

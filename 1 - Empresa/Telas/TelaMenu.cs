@@ -19,8 +19,42 @@ namespace _1___Empresa.Telas
 
         private void button1_Click(object sender, EventArgs e)
         {
-             Cadastro cadastro = new Cadastro();    
-            ShowDialog(cadastro);
+            menuTransicao.Start();
+
+          Cadastro cadastro = new Cadastro();
+            cadastro.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            sidebarTransicao.Start();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+       
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
